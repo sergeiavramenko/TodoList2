@@ -2,6 +2,7 @@ import React, {useState} from 'react';
 import {v1} from 'uuid'
 import './App.css';
 import {TaskType, Todolist} from "./Todolist";
+import {HOOK} from "./HOOK";
 
 export   type FilterValurType = "Active" | "All" | "Completed";
 
@@ -52,6 +53,7 @@ function App() {
                   RemoveTasks={RemoveTasks}
                   ChangesFilter={ChangesFilter}
                   AddTasks={AddTasks}/>
+        <HOOK />
 
 
     </div>
